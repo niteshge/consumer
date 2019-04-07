@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  consumer:
+    image: consumer
+    build: .
+    ports:
+      - 8088:8088
