@@ -21,4 +21,10 @@ public class HomeController {
     public String helloToProducer(){
         return "Hello producer this cosumer asking you...";
     }
+
+    @GetMapping(value = "/home")
+    public ResponseEntity home(){
+        return new ResponseEntity("Hello", HttpStatus.OK);
+    }
+
 }
